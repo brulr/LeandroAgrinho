@@ -1,0 +1,168 @@
+/* Estilos globais para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif; /* Uma fonte moderna e legível */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Fundo cinza claro para a página */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Estilos do Cabeçalho --- */
+header {
+    background-color: #007bff; /* Azul vibrante */
+    color: #fff;
+    padding: 1.5rem 0; /* Preenchimento generoso */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mais destacada */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Título grande para o site de notícias */
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+header nav ul li {
+    display: inline-block; /* Itens da navegação em linha */
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e0f2f7; /* Cor ao passar o mouse */
+}
+
+/* --- Estilos do Corpo Principal (main) --- */
+main {
+    max-width: 1200px; /* Largura máxima para o conteúdo das notícias */
+    margin: 30px auto; /* Centraliza e adiciona margem */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); /* Sombra suave para o bloco principal */
+}
+
+/* Estilos para a seção de destaque */
+.noticia-destaque {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee; /* Linha divisória */
+    padding-bottom: 30px;
+}
+
+.noticia-destaque h2 {
+    text-align: center;
+    color: #0056b3; /* Tom de azul mais escuro */
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.noticia-destaque article {
+    display: flex; /* Flexbox para alinhar imagem e texto */
+    align-items: center; /* Alinha verticalmente */
+    gap: 30px; /* Espaço entre os itens */
+}
+
+.noticia-destaque img {
+    width: 45%; /* Largura da imagem de destaque */
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia-destaque h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* Estilos para as notícias recentes em grade */
+.noticias-recentes h2 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.grade-noticias {
+    display: grid; /* Grid para organizar as notícias */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 25px; /* Espaço entre os itens do grid */
+}
+
+.noticia-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem não vaze */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.noticia-item:hover {
+    transform: translateY(-5px); /* Move o item um pouco para cima */
+}
+
+.noticia-item img {
+    width: 100%; /* Imagem preenche a largura do item */
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-bottom: 1px solid #eee;
+}
+
+.noticia-item h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    padding: 15px;
+    margin: 0;
+}
+
+.noticia-item p {
+    padding: 0 15px 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.ler-mais {
+    display: block; /* Ocupa a largura total */
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px; /* Cantos arredondados na parte inferior */
+    transition: background-color 0.3s ease;
+}
+
+.ler-mais:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* --- Estilos do Rodapé --- */
+footer {
+    background-color: #343a40; /* Cinza escuro */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 50px; /* Margem superior para separar do conteúdo */
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra para cima */
+}
+
+footer p {
+    margin: 5px 0;
+}
